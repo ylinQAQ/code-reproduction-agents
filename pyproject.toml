@@ -1,0 +1,16 @@
+[project]
+name = "code-reproduction-agents"
+version = "0.1.0"
+description = "Docker-backed, evidence-driven code reproduction agent workflow and controller"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+cra = "cra_controller.__main__:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
